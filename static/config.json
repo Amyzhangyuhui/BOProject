@@ -1,0 +1,50 @@
+{
+  "ServiceURL":"http://127.0.0.1:8080",
+  "pageID": "MainPage",
+  "layoutStype":"拐角型",
+  "banner":"resource/logo",
+  "navigator": {
+    "BOURL":"myAPP.NaviTree",
+    "layout":"left",
+    "Component":"NaviTree",
+    "ComponentID":"NaviTree",
+    "layoutparas":{}
+  },
+  "BOChartShow" : [
+    {
+      "BOURL":"product",
+      "layout": "below BOSearch",
+      "Component":"dynamicSetBar",
+      "ComponentID":"dynamicSetBar1",
+      "layoutparas": {"x":0,"y":0,"w":30,"h":10,"i":"0"}
+    },
+    {
+      "BOURL":"Order",
+      "layout": "bottomright",
+      "Component":"dynamicSetScatter",
+      "ComponentID":"dynamicSetScatter1",
+      "layoutparas":{"x":30,"y":0,"w":30,"h":10,"i":"1"}
+    },
+    {
+      "BOURL":"Order",
+      "layout": "below BOSearch",
+      "Component":"dynamicSetPie",
+      "ComponentID":"dynamicSetPie1",
+      "layoutparas":{"x":60,"y":0,"w":30,"h":10,"i":"2"}
+    },
+    {
+      "BOURL":"Order",
+      "layout":"top",
+      "Component":"dynamicSetLine",
+      "ComponentID":"dynamicSetLine1",
+      "layoutparas":{"x":0,"y":8,"w":30,"h":10,"i":"3"}
+    },
+    {
+      "BOURL":"IssueList",
+      "layout": "middle bottom",
+      "Component":"dynamicHandsontable",
+      "ComponentID":"dynamicHandsontable1",
+      "layoutparas": {"x":30,"y":8,"w":30,"h":10,"i":"4"}
+    }
+  ]
+}

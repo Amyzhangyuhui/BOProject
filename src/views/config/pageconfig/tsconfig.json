@@ -1,0 +1,46 @@
+{
+  "testLayout":[
+    {"x":0,"y":0,"w":7,"h":8,"i":"0","Com":"dynamicSetBar"},
+    {"x":0,"y":9,"w":7,"h":8,"i":"1","Com":"dynamicSetScatter"},
+    {"x":0,"y":17,"w":7,"h":8,"i":"2","Com":"dynamicSetPie"},
+    {"x":0,"y":25,"w":13,"h":8,"i":"3","Com":"dynamicSetLine"}
+  ],
+  //“国”字型、拐角型、 “T”结构布局、“口”型布局、标题正文型、封面型
+  "layoutStype":"拐角型",
+  "banner":"resource/logo",
+  "navigator": {
+    "BOURL":"myAPP.NaviTree",
+    "layout":"left",
+    "Component":"NaviTree",
+    "ComponentID":"NaviTree",
+    "layoutparas":{}
+  },
+  "BOChartShow":{
+    "BOURL":"product",
+    "layout": "below BOSearch",
+    "Component":"dynamicSetBar",
+    "ComponentID":"dynamicSetBar",
+    "layoutparas": {"x":0,"y":0,"w":7,"h":8,"i":"0"}
+  },
+  "BOChartShow":{
+    "BOURL":"Order",
+    "layout": "bottomright",
+    "Component":"dynamicSetScatter",
+    "ComponentID":"dynamicSetScatter",
+    "layoutparas":{"x":0,"y":9,"w":7,"h":8,"i":"1"}
+  },
+  "BOChartShow":{
+    "BOURL":"Order",
+    "layout": "below BOSearch",
+    "Component":"dynamicSetPie",
+    "ComponentID":"dynamicSetPie",
+    "layoutparas":{"x":0,"y":17,"w":7,"h":8,"i":"2"}
+  },
+  "BOChartShow":{
+    "BOURL":"Order",
+    "layout":"top",
+    "Component":"dynamicSetLine",
+    "ComponentID":"dynamicSetLine",
+    "layoutparas":{"x":0,"y":25,"w":13,"h":8,"i":"3"}
+  }
+}
